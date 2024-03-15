@@ -1,0 +1,86 @@
+:root {
+  --color-dark: #20232e;
+  --color-light: #dddddd;
+  --color-primary: #f26922;
+  --border-radius: 8px;
+  --transition-base: all 0.2s ease-in-out;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-dark);
+}
+main {
+  padding: 50px;
+}
+.container {
+  width: 100%;
+  max-width: 1090px;
+
+  margin: 0 auto;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+h1,
+h2 {
+  font-weight: 500;
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: 22px;
+}
+
+button {
+  cursor: pointer;
+  transition: var(--transition-base);
+
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+
+  color: white;
+  background-color: var(--color-primary);
+
+  padding: 12px 30px;
+
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius);
+}
+button:hover {
+  filter: brightness(92%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  row-gap: 15px;
+
+  height: 100%;
+  padding: 20px;
+
+  border-radius: var(--border-radius);
+  border: 1px var(--color-light) solid;
+}

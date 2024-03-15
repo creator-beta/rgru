@@ -1,0 +1,36 @@
+.header {
+  height: 80px;
+  width: 100%;
+}
+.header__container {
+  height: inherit;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px var(--color-light) solid;
+}
+.logo {
+  width: 120px;
+  object-fit: contain;
+}
+.nav,
+.nav__list,
+.nav__link {
+  height: inherit;
+}
+.nav__list {
+  display: flex;
+}
+.nav__link > a {
+  height: inherit;
+  min-width: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
